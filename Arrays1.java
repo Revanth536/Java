@@ -33,11 +33,11 @@ class Arrays1 {
         // System.out.println(Arrays.toString(a));
 
         // Find second largest
-        int n = sc.nextInt();
-        int a[] = new int[n];
-        for(int i=0;i<n;i++)
-            a[i] = sc.nextInt();
-        Arrays.sort(a);
-        System.out.println(a[a.length-2]);
+        // int n = sc.nextInt();
+        // int a[] = new int[n];
+        // for(int i=0;i<n;i++)
+        //     a[i] = sc.nextInt();
+        // Arrays.sort(a);
+        // System.out.println(a[a.length-2]);
     }
 }
