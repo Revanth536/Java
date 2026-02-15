@@ -50,9 +50,9 @@ class Arrays1 {
         //     a[i] = sc.nextInt();
         // int b[] = Arrays.stream(a).distinct().toArray();
         // System.out.println(Arrays.toString(b));
-        Integer a[] = { 4, 5, 6, 7, 8, 4, 5 };
-        Set<Integer> set = new LinkedHashSet<>(Arrays.asList(a));
-        System.out.println(set);
+        // Integer a[] = { 4, 5, 6, 7, 8, 4, 5 };
+        // Set<Integer> set = new LinkedHashSet<>(Arrays.asList(a));
+        // System.out.println(set);
         
 
     }
