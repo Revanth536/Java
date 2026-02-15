@@ -12,6 +12,7 @@ package Java;
 // Sort array
 
 import java.util.*;
+import java.util.stream.Stream;
 
 class Arrays1 {
     static Scanner sc = new Scanner(System.in);
@@ -34,11 +35,25 @@ class Arrays1 {
         // System.out.println(Arrays.toString(a));
 
         // Find second largest
-        int n = sc.nextInt();
-        int a[] = new int[n];
-        for(int i=0;i<n;i++)
-            a[i] = sc.nextInt();
-        Arrays.sort(a);
-        System.out.println(a[a.length-2]);
+        // int n = sc.nextInt();
+        // int a[] = new int[n];
+        // for(int i=0;i<n;i++)
+        //     a[i] = sc.nextInt();
+        // Arrays.sort(a);
+        // System.out.println(a[a.length-2]);
+
+        // Remove duplicates
+        // using StreamAPI
+        // int n = sc.nextInt();
+        // int a[] = new int[n];
+        // for(int i=0;i<n;i++)
+        //     a[i] = sc.nextInt();
+        // int b[] = Arrays.stream(a).distinct().toArray();
+        // System.out.println(Arrays.toString(b));
+        Integer a[] = { 4, 5, 6, 7, 8, 4, 5 };
+        Set<Integer> set = new LinkedHashSet<>(Arrays.asList(a));
+        System.out.println(set);
+        
+
     }
 }
