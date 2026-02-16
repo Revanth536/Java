@@ -1,5 +1,8 @@
 package Java;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 // Palindrome
 
 // Count frequency
@@ -11,7 +14,7 @@ package Java;
 // First non-repeating character
 
 public class St {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         // Reverse String
         // String s = "hello world";
         // String revString = "";
@@ -59,17 +62,27 @@ public class St {
         //     System.out.println("Not Anagram");
 
         // Rotate String
-        String s = "abcdef";
+        // String s = "abcdef";
+        // int k = 3;
+        // String s1="";
+        // String s2="";
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        String s = br.readLine();
         int k = 3;
+        String r = rotate(s, k);
+        System.out.println(r);
+    }
+    static  String rotate (String s, int k){
         String s1="";
         String s2="";
-        for (int i = 0; i < k; i++) {
-            s1 += s.charAt(i) ;
+        for(int i=0;i<k;i++){
+            s1+=s.charAt(i);
         }
-        for (int i = k; i < s.length(); i++) {
-            s2 += s.charAt(i);
+            
+        for(int i=k;i<s.length();i++){  
+            s2+=s.charAt(i);
         }
-        System.out.println(s2+s1);
-
-    }
+        return s2+s1;
+       }
 }
