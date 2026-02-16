@@ -58,5 +58,18 @@ public class St {
         // else
         //     System.out.println("Not Anagram");
 
+        // Rotate String
+        String s = "abcdef";
+        int k = 3;
+        String s1="";
+        String s2="";
+        for (int i = 0; i < k; i++) {
+            s1 += s.charAt(i) ;
+        }
+        for (int i = k; i < s.length(); i++) {
+            s2 += s.charAt(i);
+        }
+        System.out.println(s2+s1);
+
     }
 }
