@@ -56,10 +56,10 @@ class Arrays1 {
         // System.out.println(set);
 
         // Sort array
-        int n = sc.nextInt();
-        int a[] = new int[n];
-        for (int i = 0; i < n; i++)
-            a[i] = sc.nextInt();
+        // int n = sc.nextInt();
+        // int a[] = new int[n];
+        // for (int i = 0; i < n; i++)
+        //     a[i] = sc.nextInt();
         // for (int i = 0; i < a.length - 1; i++) {
         //     for (int j = 0; j < a.length - 1 - i; j++) {
         //         if (a[j] > a[j + 1]) {
@@ -69,7 +69,35 @@ class Arrays1 {
         //     }
 
         // }
-        Arrays.sort(a);
-        System.out.println(Arrays.toString(a));
+        // Arrays.sort(a);
+        // System.out.println(Arrays.toString(a));
+
+        // Two sum
+        // int n= sc.nextInt();
+        // int a[] = new int[n];
+        // for(int i=0;i<n;i++)
+        //     a[i] = sc.nextInt();
+        // int t = sc.nextInt();
+        // for (int i = 0; i <n; i++) {
+        //     for (int j = 0; j < n; j++) {
+        //         if(a[i]+a[j]==t)
+        //             System.out.println(a[i]+" "+a[j]);
+        //     }
+
+        //     }
+        // }
+
+        // Rotate array
+        int n = sc.nextInt();
+        int a[] = new int[n];
+        for (int i = 0; i < n; i++)
+            a[i] = sc.nextInt();
+        int d = sc.nextInt();
+        int b[] = new int[n];
+        for (int i = 0; i < n; i++) {
+            b[(i + d) % n] = a[i];
+        }
+        System.out.println(Arrays.toString(b));
+
     }
 }
