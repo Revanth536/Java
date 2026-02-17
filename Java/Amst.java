@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Amst {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
-        // int n = sc.nextInt();
+        int n = sc.nextInt();
         // int t = n,c=0,sum=0;
         // while (t > 0) {
         //     c++;
