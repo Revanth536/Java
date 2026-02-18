@@ -1,3 +1,4 @@
+package Java;
 import java.util.*;
 public class Method {
     static Scanner sc = new Scanner(System.in);
